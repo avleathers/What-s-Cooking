@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/Maria.css">
+    <link rel="stylesheet" href="assets/css/missy.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <title>What 'Cha Got</title>
+</head>
+
+<body>
+    <!-- //header -->
+    <img src="assets/css/images/foodbackground2.jpg" altref="Food" frameborder="0">
+    <div class="container">
+        <nav class="navbar" role="navigation" aria-label="main navigation" class="section container">
+            <div class="navbar-brand">
+                <h1 class="title">
+                    <i class="fas fa-utensils"></i> Create a meal with <em> What 'Cha Got </em>!
+                </h1>
+            </div>
+            <!-- Add buttons to sign up and log in -->
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="adduser.html" class="button is-success">
+                            <strong><i class="fas fa-user-plus"></i></strong>
+                        </a>
+                        <a href="login.html" class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- container of all tiles  -->
+    <div class="container">
+        <div class="notification">
+            <!-- top left tile where our search button and ingredient list will be  -->
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title">My Ingredients:</p>
+                        <div class="control">
+                            <input id="ingredientInput" class="input" type="text" placeholder="Ingredients">
+                            <button class="button" id="addIngredients">Add Ingredients </button>
+                            <ul>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="control">
+                            <button id="submitButton">Submit</button>
+                        </div>
+                    </div>
+                    <!-- mid left tile where our top ingredients will populate -->
+                    <div class="tile is-child box">
+                        <div class="title">Most Common Ingredients: <i class="fas fa-heart"></i></div>
+                        <br>
+                        <br>
+                        <ol type="1" id="commonIngredients">
+                        </ol>
+                    </div>
+                    <!-- bottom left tile where our gif will populate -->
+                    <div class="tile is-child box">
+                        <div class="title">We <i class="fas fa-grin-beam"></i> We <i class="fas fa-sad-cry"></i> We <i
+                                class="fas fa-utensils"></i></div>
+                        <br>
+                        <p id="food"></p>
+                    </div>
+                </div>
+                <!-- end of left side .. this is were recipes go -->
+                <div class="tile is-parent">
+                    <div class="tile is-child box">
+                        <p class="title"> Let's get cooking !</p>
+                        <hr>
+                        <div id="recipeResults"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p><i class="fas fa-utensils"></i><em> What'Cha Got </em> </p>
+    </div>
+    <!-- DON'T TOUCH SCRIPT -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBwKeW4YmJyeHvSeCRgQrPvSayDP0yfvWs",
+            authDomain: "whats-in-my-fridge-335ea.firebaseapp.com",
+            databaseURL: "https://whats-in-my-fridge-335ea.firebaseio.com",
+            projectId: "whats-in-my-fridge-335ea",
+            storageBucket: "whats-in-my-fridge-335ea.appspot.com",
+            messagingSenderId: "82405487027"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+    <!-- <script src="assets/javascript/Maria.js"></script> -->
+    <!-- <script src="assets/javascript/baylis.js"></script> -->
+    <!-- <script src="assets/javascript/javascriptNewyn.js"></script> -->
+</body>
+
+</html>

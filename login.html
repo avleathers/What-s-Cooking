@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+    <title>What'Cha Got</title>
+    <link rel="stylesheet" href="assets/css/adduser.css">
+</head>
+
+<body>
+
+    <!-- //header -->
+    <img src="assets/css/images/foodbackground2.jpg" altref="Food" frameborder="0">
+    <div class="container" id="adduserContainer">
+        <nav class="navbar" role="navigation" aria-label="main navigation" class="section container">
+            <div class="navbar-brand">
+                <h1 class="title">
+                    <i class="fas fa-utensils"></i> Log In to <em> What'Cha Got </em>!
+                </h1>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+            </div>
+
+                    <!-- Add buttons to sign up and log in -->
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a href="index.html" class="button is-success">
+                                    <i class="fas fa-home">
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+    </div>
+
+
+    <!-- container of all tiles  -->
+    <div class="container" id="inputContainer">
+        <div class="notification">
+            <!-- top left tile where our search button and ingredient list will be  -->
+            <div class="tile is-ancestor">
+                <div class="tile is-12 is-vertical is-parent">
+                    <div class="tile is-child box">
+                        <p class="title">My Login Info:</p>
+                        <div class="control">
+                            <input id="emailInput" class="input" type="text" placeholder="Email Address">
+                            <br>
+                            <br>
+                            <input id="passwordInput" class="input" type="text" placeholder="Password">
+                            <br>
+                            <br>
+                        </div>
+                        <br>
+                        <div class="control">
+                            <button id="submitButton">Submit</button>
+                        </div>
+                    </div>
+                    <!-- botton left tile where our top recepies will populate -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer">
+        <p><i class="fas fa-utensils"></i><em> What'Cha Got </em> </p>
+    </div>
+    <!-- DON'T TUCH SCRIPT -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBwKeW4YmJyeHvSeCRgQrPvSayDP0yfvWs",
+            authDomain: "whats-in-my-fridge-335ea.firebaseapp.com",
+            databaseURL: "https://whats-in-my-fridge-335ea.firebaseio.com",
+            projectId: "whats-in-my-fridge-335ea",
+            storageBucket: "whats-in-my-fridge-335ea.appspot.com",
+            messagingSenderId: "82405487027"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="assets/javascript/javascriptNewyn.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="assets/javascript/Maria.js"></script>
+    <script src="assets/javascript/baylis.js"></script>
+    <script src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>
